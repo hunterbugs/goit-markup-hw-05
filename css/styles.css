@@ -575,12 +575,12 @@ img {
   transition: background-color 0.25s, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.testing-wrap {
+.wrap {
   overflow: hidden;
   position: relative;
 }
 
-.testing-wrap-text {
+.wrap-text {
   position: absolute;
   top: 0;
   height: 100%;
@@ -593,6 +593,6 @@ img {
   transition: transform 0.25s ease-in-out;
 }
 
-.project-card:hover .testing-wrap-text {
+.project-card:hover .wrap-text {
   transform: translateY(0);
 }
