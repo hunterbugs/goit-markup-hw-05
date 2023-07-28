@@ -574,3 +574,25 @@ img {
   color: #404bbf;
   transition: background-color 0.25s, cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.testing-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.testing-wrap-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  font-size: 18px;
+  color: var(--cloud);
+  background-color: var(--iris);
+  transform: translateY(100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.project-card:hover .testing-wrap-text {
+  transform: translateY(0);
+}
