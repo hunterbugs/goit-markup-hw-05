@@ -140,6 +140,7 @@ img {
 
 .page-header {
   border-bottom: 1px solid var(--cornflower);
+  height: 72px;
 }
 
 .page-footer {
@@ -199,6 +200,21 @@ img {
 .contacts-menu .contact:hover,
 .contacts-menu .contact:focus {
   color: var(--iris);
+}
+.current {
+  position: relative;
+  color: var(--ocean);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 9px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  border: 2px solid var(--ocean);
 }
 
 .nav-menu .item:not(:last-child),
@@ -469,6 +485,13 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project .name {
